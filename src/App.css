@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.help-page-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*TO BE DELETED*/
+.help-page-header img {
+  width: 200px;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.help-page-header ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.header-heading {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.topic-border {
+  border-bottom: 1px solid #000;
+}
+
+
+.issues-cat li{
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.issues-cat button, .order-issue-item button{
+  border: none;
+}
+
+.rotate-img-up{
+    transition : 1s;
+    transform: rotate(180deg);
+}
+
+.rotate-img-down{
+  transition : 1s;
+  transform: rotate(360deg);
+}
+
+
+.issues-cat button{
+  background-color: #fff;
+}
+
+.order-issue-item button{
+  background-color : #F4F4F4;
+}
+
+.order-issue-item button:hover{
+  transform:scale(1.2);
+}
+.issues-cat button:active{
+  background-color: rgb(116, 116, 116);
+}
+
+.order-issue-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0.4rem;
+  margin: 0.6rem auto;
+  background-color : #F4F4F4;
+  border-radius: 7px;
+}
+
+.footer{
+  position:fixed;
+bottom:0;
+width:100%;
 }
