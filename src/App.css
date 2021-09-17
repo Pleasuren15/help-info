@@ -47,12 +47,12 @@ body{
 }
 
 .rotate-img-up{
-    transition : 1s;
+    transition : 0.7s;
     transform: rotate(180deg);
 }
 
 .rotate-img-down{
-  transition : 1s;
+  transition : 0.7s;
   transform: rotate(360deg);
 }
 
@@ -84,6 +84,20 @@ body{
 
 .footer{
   position:fixed;
-bottom:0;
-width:100%;
+  bottom:0;
+  width:100%;
+}
+
+.footer-links{  display:grid;
+grid-template-columns: 0.5fr 1fr 1fr 1fr;}
+
+.footer-links ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.footer-links ul li{
+  padding:0;
+  margin:0;
 }

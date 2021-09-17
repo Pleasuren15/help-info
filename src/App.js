@@ -6,13 +6,12 @@ import OrderIssues from "./Components/OrderIssue";
 import Footer from "./Components/Footer";
 
 function App() {
-  const [comp, setComp] = useState("Issuses");
+  const [comp, setComp] = useState("Issues");
 
   return (
     <>
       <Header />
       {comp == "Issues" ? <Issues /> : <OrderIssues/>}
-      <Footer />
     </>
   );
 }
